@@ -1,0 +1,246 @@
+html
+{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: hsl(0, 0%, 100%);
+    width: 100vmax;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header
+{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./job-gdc026e884_1280.jpg) no-repeat;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 10px 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: .2rem;
+    margin: .5rem;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.8s ease-in-out;
+}
+
+.navbar img:hover {
+    transform: rotate(360deg);
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(134, 124, 124, 0.3);
+    padding: 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 1rem 1.4rem;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: hsl(60, 16%, 87%);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s ease-in;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.title h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+.content-paragraph {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+button {
+    background-color: hsl(60, 16%, 87%);
+    color: #000;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+    margin: 2rem 0;
+    padding: 1.5rem 5rem;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+button:hover {
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.3);
+    font-style: bold;
+}
+
+main {
+    width: 100vmax;
+    background: #fff;
+    color: #222;
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 300px;
+    text-align: center;
+    background: hsl(60, 16%, 67%);
+    color: #fff;
+    margin: 4rem 0;
+    padding: 7rem 5rem;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+
+.card2 {
+    margin: 0 5rem;
+}
+
+#services
+{
+    margin: 4rem 0;
+}
+
+.product-cards>div:hover {
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 35px 5px rgba(2, 2, 2, 0.5);
+}
+
+.product-card-heading {
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-card-paragraph {
+    opacity: 70%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.contact img {
+    height: 29rem;
+    width: auto;
+    object-fit: cover;
+    transform: translateX(-6rem);
+    transform: translateY(8rem);
+}
+
+.contact form {
+    background: hsl(60, 16%, 67%);
+    color: #fff;
+    padding: 4rem 2rem;
+    margin-right: 14rem;
+}
+
+.contact fieldset {
+    background: hsl(60, 10%, 47%);
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.contact label {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.contact input, textarea {
+    text-align: center;
+    width: 100%;
+    outline: none;
+    border: 2px solid transparent;
+    margin: 1rem 0;
+    padding: .5rem 2rem;
+}
+
+.contact input:hover {
+    border: 2px solid hsl(240, 30%, 64%);
+}
+
+.contact form button{
+    display:flex;
+    justify-content: center;  
+    margin: 0 auto;
+}
+
