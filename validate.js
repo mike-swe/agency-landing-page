@@ -8,7 +8,6 @@ let loginForm = () => {
     const button = document.getElementById("cta-2");
 
     if(name.value.trim() ==="" || email.value.trim() ==="" && message.value.trim() ==="") {
-        alert("Input required on required field!!");
 
         name.placeholder = "Please enter your name";
 
